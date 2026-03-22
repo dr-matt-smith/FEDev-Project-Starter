@@ -43,7 +43,7 @@ When you've cloned/downloaded this project from GitHub you need to run the follo
   ```bash
   npm install
   npm run auth:schema
-  npm run db:push                 // say "yes" when prompted
+  npm run db:push
   ```
 
 Then run the dev web server with

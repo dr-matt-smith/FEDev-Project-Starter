@@ -16,7 +16,10 @@ clearDatabase(db);
 console.log('Database cleared.');
 
 const emails = await insertUsers(db);
-emails.forEach((email) => console.log(`Created user: ${email}`));
+emails.forEach(
+    (email) =>
+        console.log(`Created user: ${email}`)
+);
 
 console.log('Seed complete.');
 client.close();

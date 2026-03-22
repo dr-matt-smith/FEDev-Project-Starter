@@ -21,7 +21,8 @@ Whenever we have added `better-auth` to a SvelteKit project we are told to do th
      npm run auth:schema
      ```
 2. Setup/update your database by executing the generated SQL schema commands:
-   - say "YES" when asked about running SQL statements to create DB tables !
+   - NODE: I've set-up the `db:push` script defined in `package.json` to force schema update (`drizzle-kit push --force`), this avoids being interactively asked at the terminal to confirm you want to execute the SQL statements to create DB tables
+   - (it's not good practice for a produciton system - since you want to have a chance to stop before updating a live system's database, but for this college project it's fine, and should make it easy to deploy as a live website)
 
    ```bash
    npm run db:push

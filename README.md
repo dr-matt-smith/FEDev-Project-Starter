@@ -12,15 +12,16 @@ This project is a basic SvelteKit project, with some basic email+password authen
 
 ## Resetting the database
 
-(don't waste time manually adding / removing users for testing purposes - always add features to make resetting and seeding a database a single comment/route)
+Don't waste time manually adding / removing users for testing purposes - always add features to make resetting and seeding a database a single comment/route
 
-When the database is reset, it will reset to the users defined in  `/lib/data/users.json`
-- if you are going to define any more users in here, please make life simple and ensure **ALL users have password = `password`**
 
-There is also a route to reset the database:
+There is a route to reset the database:
   - when the website is running visit route `/resetdatabase`
     - this runs function `resetDatabase()` which is declared in `/lib/server/seed.js`
-    - (which does the same job as `/seed.js` in the root of the project directory
+
+    
+When the database is reset, it will reset to the users defined in  `/lib/data/users.json`
+- if you are going to define any more users in here, please make life simple and ensure **ALL users have password = `password`**
 
 Each user has basic user properties, plus the following:
 - `balance`, an integer balance, for whatever currency/credits is appropriate for your project case study

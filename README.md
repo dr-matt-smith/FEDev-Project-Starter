@@ -50,7 +50,7 @@ Then run the dev web server with
 
 Then **reset the database** by visiting the `/resetdatabase` route.
 
-More detailed description about project setup setps can be foudn in: [README_SETUP_DETAILS.md](README_SETUP_DETAILS.md)
+More detailed description about project setup setps can be found in: [README_SETUP_DETAILS.md](README_SETUP_DETAILS.md)
 
 
 ## Adding additional fields to the 'user' database table
